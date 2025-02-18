@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Loader2 } from 'lucide-svelte';
 	import Button from '../ui/button/button.svelte';
-	import Skeleton from '../ui/skeleton/skeleton.svelte';
 
 	let src = 'https://picsum.photos/200/300';
 	let alt = 'random photo';
@@ -21,7 +20,7 @@
 <div class="flex w-fit flex-col gap-2">
 	<div class="h-[300px] w-[200px]">
 		{#if isLoading}
-			<div class="h-full w-full animate-pulse rounded-md bg-gray-200" />
+			<div class="h-full w-full animate-pulse rounded-md bg-gray-200"></div>
 		{/if}
 		<img {src} {alt} on:load={onLoad} class="h-full w-full object-cover" class:hidden={isLoading} />
 	</div>
