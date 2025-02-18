@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { User } from '$core/context/user.svelte.js';
+	import Photo from '$lib/components/custom/photo.svelte';
 	import UserForm from '$lib/components/custom/userForm.svelte';
 	import Alert from '$lib/components/ui/alert/alert.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
@@ -67,5 +68,6 @@
 				<p>🥳 This is an alert 🎉</p>
 			</Alert>
 		</div>
+		<Photo />
 	</div>
 </div>
