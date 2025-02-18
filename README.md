@@ -1,38 +1,26 @@
-# sv
+# Svelte 5 Modern Starter Template
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern, feature-rich starter template combining the latest Svelte 5 with industry-leading tools for building scalable web applications. This template provides a robust foundation with pre-configured Tailwind CSS 4, Axios for HTTP requests, and the elegant ShadCn Svelte component library.
 
-## Creating a project
+### Features
+- ⚡️ Svelte 5 with its powerful runes system
+- 🎨 Tailwind CSS 4 for utility-first styling
+- 🎯 ShadCn-Svelte for beautiful, accessible components 
+- 🔄 Axios pre-configured for API communication
+- 📱 Responsive design ready
+- 🛠 Modern development setup
+- 🚀 Production-ready build configuration
 
-If you're seeing this, you've probably already done this step. Congrats!
+Perfect for developers looking to jumpstart their Svelte 5 projects with a modern, maintainable tech stack.
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Getting Started
 
 ```bash
-npm run dev
+# Clone the repository
+git clone [your-repo-url]
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+# Install dependencies
+yarn install
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+# Start development server
+yarn dev
