@@ -4,15 +4,19 @@
   import { type VariantProps, tv } from 'tailwind-variants';
 
   export const buttonVariants = tv({
-    base: 'cursor-pointer ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
+    base: 'cursor-pointer ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 dark:text-white',
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+        default: 'bg-white text-black hover:bg-white/90',
+        black: 'bg-gray-800 text-white hover:bg-gray-800/90',
         destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-        outline: 'border-input bg-background hover:bg-accent hover:text-accent-foreground border',
+        outline:
+          'border-input bg-background hover:bg-accent hover:text-accent-foreground border dark:border-white',
         secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
+        combobox: 'dark:bg-white dark:text-black bg-white text-black',
+        text: 'text-gray-500 hover:text-gray-700 border-none',
       },
       size: {
         default: 'h-10 px-4 py-2',

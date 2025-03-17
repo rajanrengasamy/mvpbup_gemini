@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { User } from 'src/core/context/user.svelte';
+  import { AppAlert } from 'src/components/alert';
+  import { AppButton } from 'src/components/button';
   import Photo from 'src/components/custom/Photo.svelte';
   import UserForm from 'src/components/custom/UserForm.svelte';
-  import { AppButton } from 'src/components/button';
-  import { AppAlert } from 'src/components/alert';
-  import { AppDialog } from 'src/components/dialog/index.js';
+  import { AppDialog } from 'src/components/dialog';
+  import { User } from 'src/core/context/user.svelte';
 
   const { data } = $props();
 
@@ -76,9 +76,7 @@
     <Photo />
     <div class="flex w-1/2 flex-col">
       <AppDialog.Root>
-        <AppDialog.Trigger>
-          <AppButton>Open Dialog</AppButton>
-        </AppDialog.Trigger>
+        <AppDialog.Trigger>Open</AppDialog.Trigger>
         <AppDialog.Content>
           <AppDialog.Header>
             <AppDialog.Title>Are you sure absolutely sure?</AppDialog.Title>
