@@ -24,7 +24,7 @@
     {/if}
     <img class="h-full w-full object-cover" class:hidden={isLoading} {alt} {src} on:load={onLoad} />
   </div>
-  <Button onclick={updatePhoto}>
+  <Button onclick={updatePhoto} variant="black">
     {#if isLoading}
       Update Photo <Loader2 class="h-4 w-4 animate-spin" />
     {:else}

@@ -18,7 +18,7 @@ Perfect for developers looking to jumpstart their Svelte 5 projects with a moder
 
 ```bash
 # Clone the repository
-git clone [your-repo-url]
+git clone https://github.com/MattL-NZ/svelte-tailwind4-starter.git
 
 # Install dependencies
 yarn install

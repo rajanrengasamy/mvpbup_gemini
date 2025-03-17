@@ -26,11 +26,16 @@
     <!-- Header section -->
     <div class="flex items-center gap-4">
       <h1 class="text-2xl font-bold">Home page</h1>
-      <AppButton class="text-white" disabled={loading} onclick={() => refreshData()}>
+      <AppButton
+        class="text-white"
+        variant="black"
+        disabled={loading}
+        onclick={() => refreshData()}
+      >
         {loading ? 'Refreshing...' : 'Refresh Data'}
       </AppButton>
       <a href="/datapage">
-        <AppButton class="w-full text-white">
+        <AppButton class="w-full text-white" variant="black">
           Browse to page that fetches data on hover of this button
         </AppButton>
       </a>
@@ -74,9 +79,11 @@
       </AppAlert.Root>
     </div>
     <Photo />
-    <div class="flex w-1/2 flex-col">
+    <div class="flex">
       <AppDialog.Root>
-        <AppDialog.Trigger>Open</AppDialog.Trigger>
+        <AppDialog.Trigger class=" w-auto cursor-pointer rounded-md bg-red-400 p-3 text-white"
+          >Open Dialog</AppDialog.Trigger
+        >
         <AppDialog.Content>
           <AppDialog.Header>
             <AppDialog.Title>Are you sure absolutely sure?</AppDialog.Title>
