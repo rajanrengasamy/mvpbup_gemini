@@ -29,6 +29,7 @@ vite.config.ts.timestamp-*
 tsconfig.tsbuildinfo
 
 # CSV data files
-static/data/q4_2024_financial_data_200k.csv
 static/data/q4_2024_financial_data.csv
 static/data/sampledata.csv
+static/data/sampledata2.csv
+static/data/q4_2024_financial_data_200k.csv
