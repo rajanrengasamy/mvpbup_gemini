@@ -1,0 +1,28 @@
+Alright, I’m trying to write a product requirements document using a prompt.I don't need to create an entire PRD; I just need to provide context to the LLM so it will follow my instructions to create the product requirements document (PRD).Your job is to help me organize my thoughts so they are more succinct. I can then paste them as instructions for claude code.Again, this is not for you or for Claude to generate the PRD; it's to provide context on the problem. After this, I'll give Claude Code the instructions to generate the PID. Your job is to help me contextualize, phrase, and clean up my stream of thoughts so I can then instruct the LLM to generate my PRD. Let me know when you're ready so that I'll begin.
+
+
+Alright, see the attached CSV file. This is the data that's available in the database, generated in this form so that it can be visualized. It's not the best data engineering practice, but it is what we could do to quickly build a data set for Tableau visualization.The issue isn't the data set for now. We want to improve the user interface, so we're moving away from Tableau into a web app or a web UX.Again, I don't want to discuss the technology behind this; I'm more interested in the requirements.
+
+
+
+As you can see, the top half of the dashboard is actually summary statistics or accounting summary statistics.Based on the CSV file, which contains the top 10,000 rows of my dataset, the summary statistics are not present and have to be calculated in Tableau as new calculated fields. Because it is calculated, it actually prevents me from generating dashboard actions that allow a user to click on the operating expense or the net trading income and have these data filtered across the various dashboards, since the calculated fields have many blanks that disrupt the interactions across the various visualizations in the dashboard. The top half of the dashboard visualization is static and free of interaction, while only the bottom half is interactive. The bottom half contains all the expense information and allows you to filter.This makes the entire user experience very clunky and not very helpful or useful.The only thing that actually changes on the top half is the view from profit center view to country view. Thankfully, when switching the profit centre view or the country view, all of the visualisation changes, including the top half. However, the top half does not interact with the bottom half.
+
+
+
+The PRID should start. The context of the PRID is about generating a new web interface that is sophisticated and informative. Even though the summary statistics, which are critical for our stakeholders, exist, clicking on them will pull up a slide-over or some sort of UX mechanism for the user to get plenty of details. That we can't have in Tableau, including time series analysis and all the breakdown of income, expenses, allocation, cost center breakdown, profit center numbers, and FTE numbers (profit center).
+
+
+
+Again, the stakeholders, who are finance analysts and the head of trading, find the top-half overview section really helpful. However, they find it very annoying that when they click on profit before tax or non-operating income, it doesn't actually filter through to the rest of the visuals in the dashboard. Because all of the visuals exist at the same time, the stakeholders are finding it a little bit overwhelming. The aim is to build a web application that provides the most important overview front and center and allows for interaction when clicking into these numbers. It should also provide relevant filters, including the ability to change currencies, change accounting periods, and other options users are accustomed to.
+
+
+
+I'm not sure what the UX and UX requirements should be, and that's what I need the LLM to help me with. I'm trying to give it context to the problem so that I can work with it to generate the PRD.
+
+
+
+Please help me organize my thoughts so I can provide the cloud code and problem statement, allowing me to work with it to generate the BRD.
+
+
+
+Let me know if you have any questions so that we can generate the output.If you have any questions, please help me consolidate my thoughts into context for the PRD building.

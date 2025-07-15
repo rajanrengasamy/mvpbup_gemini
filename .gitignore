@@ -26,4 +26,4 @@ vite.config.ts.timestamp-*
 .yarn
 
 # TypeScript
-tsconfig.tsbuildinfo
+tsconfig.tsbuildinfostatic/data/q4_2024_financial_data_200k.csv

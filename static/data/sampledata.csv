@@ -1,0 +1,79 @@
+transaction_id,7154604,7540630,7197594,6018769,6098014,7197594,6899999
+transaction_line_id,3,27,83,484,105,92,3
+transaction_type,Journal,Journal,Journal,Journal,VendBill,Journal,Journal
+transaction_date,2024-09-30T00:00:00.000Z,2024-11-30T00:00:00.000Z,2024-09-30T00:00:00.000Z,2024-01-24T00:00:00.000Z,2024-02-08T00:00:00.000Z,2024-09-30T00:00:00.000Z,2024-07-31T00:00:00.000Z
+accounting_period_id,290,293,290,280,281,290,288
+accounting_period_start_date,1/09/2024,1/11/2024,1/09/2024,1/01/2024,1/02/2024,1/09/2024,1/07/2024
+accounting_period_end_date,30/09/2024,30/11/2024,30/09/2024,31/01/2024,29/02/2024,30/09/2024,31/07/2024
+accounting_period_name,Sep-24,Nov-24,Sep-24,Jan-24,Feb-24,Sep-24,Jul-24
+accounting_period_parent_name,Q3 2024,Q4 2024,Q3 2024,Q1 2024,Q1 2024,Q3 2024,Q3 2024
+l3_profit_centre_id,null,null,null,null,null,null,null
+l3_profit_centre_name,null,null,null,null,null,null,null
+subsidiary_id,95,141,95,95,141,95,141
+subsidiary_name,Optiver Services BV,Optiver Pty Limited,Optiver Services BV,Optiver Services BV,Optiver Pty Limited,Optiver Services BV,Optiver Pty Limited
+subsidiary_country,NL,AU,NL,NL,AU,NL,AU
+subsidiary_suffix,EU,null,EU,EU,null,EU,null
+currency_symbol,EUR,AUD,EUR,EUR,AUD,EUR,AUD
+l3_cost_centre_id,359,1206,359,576,350,359,1211
+l3_cost_centre_name,General,Research Infrastructure,General,SSO,People,General,Control Change and Assurance
+l2_cost_centre_id,358,1406,358,575,349,358,687
+l2_cost_centre_name,General,Research Platform,General,SSO,People,General,Other Business Support
+l1_cost_centre_id,306,303,306,302,1,306,688
+l1_cost_centre_name,General,Technology,General,Trading,Business Operations,General,Business support
+category_id,9917,1403,null,189,1316,null,2919
+category_name,Workers Comp Insurance,Bonus – accrual,null,Witheld travel - Other (WKR Final Tax),Travel - Airfare (Overseas),null,Intercompany Share Rights
+shared_label_id,11,null,11,5,null,11,null
+shared_label_name,Optiver Services BV,null,Optiver Services BV,Shared - All,null,Optiver Services BV,null
+spend_key_id,90,null,90,null,null,90,null
+spend_key_name,Shared - AMS Office,null,Shared - AMS Office,null,null,Shared - AMS Office,null
+apac_tax_status_id,null,null,null,null,null,null,null
+apac_tax_status_name,null,null,null,null,null,null,null
+account_id,1327,1345,1371,1366,1368,1386,1398
+account_number,50111001,50121001,50173006,50173001,50173003,50175401,50182001
+rule,Timesheet,Timesheet,Timesheet,Timesheet,Timesheet,Timesheet,Marble
+account_l1_name,Personnel expenses,Personnel expenses,Personnel expenses,Personnel expenses,Personnel expenses,Personnel expenses,Personnel expenses
+account_l2_name,Wages,Social security,Other personnel expenses,Other personnel expenses,Other personnel expenses,Other personnel expenses,Profit rights / share rights
+account_l3_name,Wages staff,Social security on wages,Travel,Travel,Travel,Recruitment,Share rights
+account_l4_name,Gross salary,Social security,Travel - Accommodation,Travel - Public transport,Travel,Interns,Share rights
+nspb_l2_name,Operating expenses,Operating expenses,Operating expenses,Operating expenses,Operating expenses,Operating expenses,Non-operating expenses
+nspb_l3_name,Personnel expenses,Personnel expenses,Personnel expenses,Personnel expenses,Personnel expenses,Recruitment,Share based payment
+nspb_l4_name,Personnel - Wages,Personnel - Social Security,Personnel - Travel,Personnel - Travel,Personnel - Travel,null,null
+account_type_id,Expense,Expense,Expense,Expense,Expense,Expense,Expense
+is_income_statement,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+is_balance_sheet,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+accounting_period_is_closed,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+amount,302.6,-208.47,2986.85,-23.19,-3.17,21.86,-11.02
+l2_profit_centre_id,2010,328,2010,102,2008,2010,1710
+l2_profit_centre_name,D1 Medium Frequency Strategy,Single Stock Options,D1 Medium Frequency Strategy,Index Options,D1 Cash,D1 Medium Frequency Strategy,Currencies
+l1_profit_centre_id,109,1409,109,1308,109,109,112
+l1_profit_centre_name,D1,SSO,D1,IXO,D1,D1,FICC
+allocation_country,NL,AU,NL,NL,NL,NL,GB
+key_id,TIMESHEET290NLEU359,TIMESHEET293AU1206,TIMESHEET290NLEU359,TIMESHEET280NLEU576,TIMESHEET281AU350,TIMESHEET290NLEU359,MARBLE288AU1211
+allocation_id,NL2010,AU328,NL2010,NL102,NL2008,NL2010,GB1710
+comment,"""Timesheet"" transaction line allocated using ""Timesheet"" allocation key.","""Timesheet"" transaction line allocated using ""Timesheet"" allocation key.","""Timesheet"" transaction line allocated using ""Timesheet"" allocation key.","""Timesheet"" transaction line allocated using ""Timesheet"" allocation key.","""Timesheet"" transaction line allocated using ""Timesheet"" allocation key.","""Timesheet"" transaction line allocated using ""Timesheet"" allocation key.","""Marble"" transaction line allocated using ""Marble"" allocation key."
+amount_eur,302.6,-128.02,2986.85,-23.19,-1.92,21.86,-6.78
+amount_aud,496.7,-208.47,4902.75,-38.07,-3.17,35.88,-11.02
+amount_usd,336.04,-136.11,3316.95,-25.31,-2.07,24.28,-7.36
+amount_cny,2378.7,-979.26,23479.21,-180.26,-14.76,171.84,-52.7
+amount_inr,28158.88,-11480.39,277945.62,-2095.91,-171.96,2034.21,-615.13
+amount_gbp,254.42,-106.8,2511.33,-19.92,-1.64,18.38,-5.72
+amount_sgd,435.73,-181.89,4300.98,-33.81,-2.78,31.48,-9.91
+amount_twd,10741.7,-4403.72,106027.21,-789.29,-65.06,775.99,-240.23
+exchange_rate_local_eur,0.9999999999891821,0.6140769670000003,0.9999999999891821,1.000000000006954,0.604836724,0.9999999999891821,0.6156504189999998
+exchange_rate_aud_eur,0.6092189329999999,0.6140769670000003,0.6092189329999999,0.6091029680000001,0.604836724,0.6092189329999999,0.6156504189999998
+exchange_rate_usd_eur,0.9004818330037702,0.9405543670029216,0.9004818330037702,0.9163970910718757,0.9264335431516812,0.9004818330037702,0.9219500417635907
+exchange_rate_cny_eur,0.12721253322007117,0.13072726698966775,0.12721253322007117,0.12864642077460114,0.1299185414754057,0.12721253322007117,0.12874586109867286
+exchange_rate_inr_eur,0.010746167,0.011150900000000002,0.010746167,0.011064412,0.011150060500000001,0.010746167,0.011029289999999999
+exchange_rate_gbp_eur,1.189349667,1.198656333,1.189349667,1.163982903,1.170271379,1.189349667,1.1854893549999999
+exchange_rate_sgd_eur,0.6944587999999998,0.7037972670000001,0.6944587999999998,0.6859848710000003,0.6887360000000002,0.6944587999999998,0.6844568389999997
+exchange_rate_twd_eur,0.0281706,0.0290701,0.0281706,0.029380871,0.029470724,0.0281706,0.028241903
+from_region,TA,APAC,TA,TA,APAC,TA,APAC
+to_region,TA,APAC,TA,TA,TA,TA,TA
+employee_id,null,null,null,null,null,null,null
+allocation,null,null,null,null,null,null,null
+timesheet_profit_centre,null,null,null,null,null,null,null
+fte,null,null,null,null,null,null,null
+fte_allocation,null,null,null,null,null,null,null
+marbles,null,null,null,null,null,null,null
+marble_allocation,null,null,null,null,null,null,null
+is_capital,null,null,null,null,null,null,null
