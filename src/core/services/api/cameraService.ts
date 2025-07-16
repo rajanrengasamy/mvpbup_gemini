@@ -3,6 +3,9 @@ import { axiosClient } from '../client';
 
 export class DemoService {
   static async getDemoModel(request: DemoModelRequest) {
-    return axiosClient.get<DemoModelResponse>('/demo/model', request);
+    // Pass query parameters correctly using the Axios config object
+    return axiosClient.get<DemoModelResponse>('/demo/model', {
+      params: request,
+    });
   }
 }
