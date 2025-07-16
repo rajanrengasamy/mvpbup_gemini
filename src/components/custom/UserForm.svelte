@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { User } from 'src/core/context/user.svelte.js';
+  // Import the User context without forcing a .js extension
+  import { User } from 'src/core/context/user.svelte';
 
   interface UserProps {
     user: User;
