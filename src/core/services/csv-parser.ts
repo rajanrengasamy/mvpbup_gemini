@@ -1,9 +1,9 @@
 import Papa from 'papaparse';
-import type { FinancialData, AggregatedFinancials, Country, ProfitCenter } from '../types/financial';
-import { calculateCountryLevelMetrics, aggregateFinancials } from '../utils/financial-calculations';
+import type { FinancialData, AggregatedFinancials } from '../types/financial';
+import { calculateCountryLevelMetrics } from '../utils/financial-calculations';
 
 export async function parseFinancialData(): Promise<Map<string, AggregatedFinancials>> {
-  const response = await fetch('/data/q4_2024_financial_data_200k.csv');
+  const response = await fetch('/data/q4_2024_financial_data.csv');
   const csvText = await response.text();
 
   return new Promise((resolve, reject) => {
@@ -11,12 +11,12 @@ export async function parseFinancialData(): Promise<Map<string, AggregatedFinanc
       header: true,
       dynamicTyping: true,
       skipEmptyLines: true,
-      complete: (results) => {
+      complete: (results: Papa.ParseResult<FinancialData>) => {
         const countryMetrics = calculateCountryLevelMetrics(results.data);
         resolve(countryMetrics);
       },
-      error: (error) => {
-        reject(error);
+      error: (error: unknown) => {
+        reject(error as Error);
       },
     });
   });

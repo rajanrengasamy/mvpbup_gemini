@@ -12,7 +12,7 @@
 - `src/components/trend-indicator/index.ts` - Component for displaying trend indicators or sparklines
 - `src/components/trend-indicator/trend-indicator.svelte` - Implementation of trend visualization
 - `src/core/stores/financial.svelte.ts` - Svelte store for managing financial data state
-- `static/data/q4_2024_financial_data_200k.csv` - Static financial data source (already exists)
+- `static/data/q4_2024_financial_data.csv` - Static financial data source (already exists)
 
 ### Notes
 
@@ -22,25 +22,28 @@
 ## Tasks
 
 - [x] 1.0 Set up financial data models and CSV data processing
+
   - [x] 1.1 Create TypeScript interfaces for financial metrics (Net Trading Income, Other Income, Total Income, Operating Expense, Operating Margin, Non Operating Expense, Profit Before Tax, Tax, Profit After Tax, Capital, Return on Equity)
   - [x] 1.2 Define interfaces for Country and Profit Center data structures based on CSV columns
-  - [x] 1.3 Create CSV parser service to load and process the static financial data from q4_2024_financial_data_200k.csv
+  - [x] 1.3 Create CSV parser service to load and process the static financial data from q4_2024_financial_data.csv
   - [x] 1.4 Implement data aggregation functions to calculate country-level metrics from transaction-level CSV data
   - [x] 1.5 Implement data aggregation functions to calculate profit center metrics (D1, IXO, FICC, SSO) for each country
   - [x] 1.6 Create time series data structure to store monthly aggregated values
   - [x] 1.7 Set up Svelte store to manage financial data state and selected filters
   - [x] 1.8 Create utility functions for currency formatting (K for thousands) and percentage calculations
 
-- [ ] 2.0 Create country-level financial overview interface
-  - [ ] 2.1 Build main dashboard route with table layout structure
-  - [ ] 2.2 Create financial table component with fixed-width columns and right-aligned numbers
-  - [ ] 2.3 Implement sticky table headers for scrolling
-  - [ ] 2.4 Add zebra striping for improved row tracking
-  - [ ] 2.5 Display all required financial metrics as columns
-  - [ ] 2.6 Add Grand Total row at bottom of table
-  - [ ] 2.7 Style interface with Optiver branding (dark blue header) and high contrast design
+- [x] 2.0 Create country-level financial overview interface
+
+  - [x] 2.1 Build main dashboard route with table layout structure
+  - [x] 2.2 Create financial table component with fixed-width columns and right-aligned numbers
+  - [x] 2.3 Implement sticky table headers for scrolling
+  - [x] 2.4 Add zebra striping for improved row tracking
+  - [x] 2.5 Display all required financial metrics as columns
+  - [x] 2.6 Add Grand Total row at bottom of table
+  - [x] 2.7 Style interface with Optiver branding (dark blue header) and high contrast design
 
 - [ ] 3.0 Implement time period filtering functionality
+
   - [ ] 3.1 Create time period filter dropdown component with Daily, Weekly, Monthly options
   - [ ] 3.2 Set default view to current month-to-date
   - [ ] 3.3 Implement filter logic in CSV parser service to filter data by date ranges
@@ -49,6 +52,7 @@
   - [ ] 3.6 Connect filter component to financial data store
 
 - [ ] 4.0 Build drill-down navigation to profit center view
+
   - [ ] 4.1 Make country rows clickable with hover state indication
   - [ ] 4.2 Create dynamic route for country detail page
   - [ ] 4.3 Implement profit center breakdown table with same financial metrics
