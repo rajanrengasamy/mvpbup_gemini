@@ -22,22 +22,22 @@ export interface ProfitCenter extends FinancialMetrics {
 }
 
 export interface TimeSeriesData {
-    [month: string]: AggregatedFinancials;
+  [month: string]: AggregatedFinancials;
 }
 
 export interface FinancialData {
-    date: string;
-    country: string;
-    profitCenter: string;
-    netTradingIncome: number;
-    otherIncome: number;
-    totalIncome: number;
-    operatingExpense: number;
-    nonOperatingExpense: number;
-    profitBeforeTax: number;
-    tax: number;
-    profitAfterTax: number;
-    capital: number;
+  date: string;
+  country: string;
+  profitCenter: string;
+  netTradingIncome: number;
+  otherIncome: number;
+  totalIncome: number;
+  operatingExpense: number;
+  nonOperatingExpense: number;
+  profitBeforeTax: number;
+  tax: number;
+  profitAfterTax: number;
+  capital: number;
 }
 
-export interface AggregatedFinancials extends FinancialMetrics {}
+export type AggregatedFinancials = FinancialMetrics;
